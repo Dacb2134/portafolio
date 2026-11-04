@@ -1,0 +1,114 @@
+main { counter-reset: seccion; }
+.seccion .seccion-titulo::before {
+  counter-increment: seccion;
+  content: counter(seccion, decimal-leading-zero) ' //';
+  margin-right: 12px;
+  font-size: 13px;
+  color: var(--acento);
+  vertical-align: middle;
+}
+
+.seccion { position: relative; }
+.seccion::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 24px;
+  height: 7px;
+  background: linear-gradient(90deg, var(--acento) 0 6px, transparent 6px 9px, var(--acento) 9px 13px, transparent 13px 16px, var(--acento) 16px 18px, transparent 18px);
+}
+
+.chispa {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  color: var(--acento);
+  background: currentColor;
+  box-shadow: 0 -6px, 0 -3px, 0 3px, 0 6px, -6px 0, -3px 0, 3px 0, 6px 0;
+  animation: titilar 2.4s steps(3) infinite;
+  pointer-events: none;
+}
+.chispa-lenta { animation-duration: 3.6s; animation-delay: .8s; }
+.chispa-tenue { color: var(--tinta-debil); }
+@keyframes titilar {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(.4); opacity: .3; }
+}
+
+.esquinas::before, .esquinas::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 3px solid var(--acento);
+}
+.esquinas::before { top: -6px; left: -6px; border-right: 0; border-bottom: 0; }
+.esquinas::after { bottom: -6px; right: -6px; border-left: 0; border-top: 0; }
+
+.escaneo {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(to bottom, transparent 0 3px, rgba(0, 0, 0, .18) 3px 4px);
+  pointer-events: none;
+}
+.escaneo::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 18%;
+  background: linear-gradient(to bottom, transparent, rgba(238, 107, 60, .25), transparent);
+  animation: barrido 3.2s linear infinite;
+}
+@keyframes barrido { from { top: -20%; } to { top: 100%; } }
+
+.barra-xp { display: flex; align-items: center; gap: 8px; margin-top: 14px; font: 9px var(--pixel); color: var(--tinta-debil); }
+.barra-xp i {
+  flex: 1;
+  height: 8px;
+  border: 1px solid var(--linea);
+  background: repeating-linear-gradient(90deg, var(--acento) 0 6px, transparent 6px 8px) left / 0 100% no-repeat;
+  animation: llenar 2.2s steps(14) .4s forwards;
+}
+@keyframes llenar { to { background-size: 78% 100%; } }
+
+.corazon {
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  margin: 0 8px 6px 6px;
+  color: var(--acento);
+  box-shadow:
+    2px 0, 6px 0,
+    0 2px, 2px 2px, 4px 2px, 6px 2px, 8px 2px,
+    0 4px, 2px 4px, 4px 4px, 6px 4px, 8px 4px,
+    2px 6px, 4px 6px, 6px 6px,
+    4px 8px;
+  animation: titilar 1.6s steps(2) infinite;
+}
+
+.panel-contacto::after {
+  content: '';
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 4px;
+  height: 4px;
+  color: var(--acento);
+  box-shadow:
+    0 0, 4px 0, 8px 0, 12px 0, 16px 0, 20px 0, 24px 0,
+    0 4px, 4px 4px, 20px 4px, 24px 4px,
+    0 8px, 8px 8px, 16px 8px, 24px 8px,
+    0 12px, 12px 12px, 24px 12px,
+    0 16px, 24px 16px,
+    0 20px, 4px 20px, 8px 20px, 12px 20px, 16px 20px, 20px 20px, 24px 20px;
+  animation: titilar 3s steps(2) infinite;
+}
+
+.pie-centro { display: flex; align-items: center; }
+
+@media (max-width: 720px) {
+  .chispa { display: none; }
+  .panel-contacto::after { display: none; }
+}

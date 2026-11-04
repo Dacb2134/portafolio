@@ -49,9 +49,9 @@
           <div><dt>Base</dt><dd>Guayaquil, EC</dd></div>
         </dl>
         <dl class="marcador">
-          <div><dt>Proyectos</dt><dd data-contar="7">0</dd></div>
-          <div><dt>Web</dt><dd data-contar="6">0</dd></div>
-          <div><dt>Android</dt><dd data-contar="3">0</dd></div>
+          <div><dt>Proyectos</dt><dd data-contar="8">0</dd></div>
+          <div><dt>Hackathons</dt><dd data-contar="2">0</dd></div>
+          <div><dt>En vivo</dt><dd data-contar="3">0</dd></div>
         </dl>
         <div class="barra-xp"><span>XP</span><i></i></div>
       </aside>
@@ -127,78 +127,104 @@
           <button class="filtro activo" data-filtro="todos">Todos</button>
           <button class="filtro" data-filtro="web">Web</button>
           <button class="filtro" data-filtro="movil">Móvil</button>
-          <button class="filtro" data-filtro="propio">Propio</button>
+          <button class="filtro" data-filtro="ia">IA</button>
+          <button class="filtro" data-filtro="java">Java</button>
         </div>
       </div>
       <ol class="lista-proyectos">
-        <li class="proyecto" data-tipo="propio web movil">
+        <li class="proyecto" data-tipo="web ia">
           <details>
-            <summary><span class="num">01</span><span class="nombre">ObraFlow CRM</span><span class="sello sello-vivo">En vivo</span><span class="mas">+</span></summary>
+            <summary><span class="num">01</span><span class="nombre">FraudIA Claims</span><span class="sello">Hackathon</span><span class="mas">+</span></summary>
             <div class="detalle">
-              <p>CRM de ventas en terreno para obras de construcción: captación, agenda de visitas, proformas con foto de evidencia, facturación y cobro por cuotas.</p>
-              <ul class="como"><li>App Android offline-first con un módulo de sincronización por entidad.</li><li>API PHP con una capa que traduce los campos de la app a las columnas de la base.</li><li>Desplegado con dominio propio, SSL y migraciones SQL numeradas.</li></ul>
-              <ul class="chips"><li>PHP 8.4</li><li>MySQL</li><li>Java</li><li>SQLite</li></ul>
-              <a class="boton" href="https://obraflow.diegoconstantedev.me" target="_blank" rel="noopener">[ Ver demo ↗ ]</a>
+              <p>Detector de posibles fraudes en siniestros de seguros, hecho en equipo para el HackIAthon 2026 (reto de una aseguradora). Asigna a cada siniestro un puntaje de riesgo explicable y apoya al analista sin reemplazarlo.</p>
+              <ul class="como"><li>Motor de 13 reglas de riesgo combinado con un modelo XGBoost en un puntaje de 0 a 100 con semáforo.</li><li>Detección de narrativas clonadas con TF-IDF y un agente de IA que responde preguntas sobre los datos.</li><li>Todo el entorno en Docker Compose y desplegado en Railway.</li></ul>
+              <ul class="chips"><li>React</li><li>TypeScript</li><li>FastAPI</li><li>MySQL</li><li>XGBoost</li><li>Docker</li></ul>
+              <a class="boton" href="https://github.com/Dacb2134/fraudia-claims" target="_blank" rel="noopener">[ Código ↗ ]</a>
             </div>
           </details>
         </li>
-        <li class="proyecto" data-tipo="web">
+        <li class="proyecto" data-tipo="web ia">
           <details>
-            <summary><span class="num">02</span><span class="nombre">Acuerdos Comerciales</span><span class="sello">Trabajo</span><span class="mas">+</span></summary>
+            <summary><span class="num">02</span><span class="nombre">PulseAI</span><span class="sello sello-vivo">En vivo</span><span class="mas">+</span></summary>
             <div class="detalle">
-              <p>Digitaliza las actas de compromiso entre un fabricante de consumo masivo y sus distribuidores: del acuerdo al PDF firmado y al seguimiento de cuotas.</p>
-              <ul class="como"><li>Genera el acta en PDF y recibe la firma como foto desde el celular, comprimida en el navegador.</li><li>Moví los archivos de la base de datos a almacenamiento en la nube con firma de peticiones hecha a mano.</li><li>Cumplimiento de cuotas por categoría y distribuidor, con exportación.</li></ul>
-              <ul class="chips"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>Azure Blob</li></ul>
-            </div>
-          </details>
-        </li>
-        <li class="proyecto" data-tipo="web">
-          <details>
-            <summary><span class="num">03</span><span class="nombre">Reporte de Campo</span><span class="sello">Trabajo</span><span class="mas">+</span></summary>
-            <div class="detalle">
-              <p>Plataforma para que promotores de una marca de tecnología reporten su trabajo en tienda con evidencia, y los supervisores lo auditen en un solo lugar.</p>
-              <ul class="como"><li>Constructor de actividades: el administrador crea nuevos tipos de reporte sin tocar código.</li><li>Formularios guiados paso a paso, mobile-first, con fotos obligatorias a la nube.</li><li>KPIs calculados al instante y presentaciones PPTX generadas por registro.</li></ul>
-              <ul class="chips"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>PPTX</li></ul>
+              <p>Agente conversacional que le explica al paciente su cobertura médica antes de atenderse, hecho en equipo para el hackIAthon (reto 3).</p>
+              <ul class="como"><li>El paciente describe su síntoma y recibe la especialidad, el copago exacto según su plan y el hospital más conveniente.</li><li>Backend en FastAPI con un modelo Gemini y las pólizas guardadas en Notion.</li><li>Frontend en JavaScript puro con patrón MVC, publicado en Vercel.</li></ul>
+              <ul class="chips"><li>Python</li><li>FastAPI</li><li>Gemini</li><li>JavaScript</li></ul>
+              <div class="acciones">
+                <a class="boton" href="https://vexta-ai-reto3.vercel.app" target="_blank" rel="noopener">[ Ver demo ↗ ]</a>
+                <a class="boton" href="https://github.com/Dacb2134/Vexta-AI-Reto3" target="_blank" rel="noopener">[ Código ↗ ]</a>
+              </div>
             </div>
           </details>
         </li>
         <li class="proyecto" data-tipo="movil">
           <details>
-            <summary><span class="num">04</span><span class="nombre">App de Mercaderistas</span><span class="sello">Trabajo</span><span class="mas">+</span></summary>
+            <summary><span class="num">03</span><span class="nombre">Aula Virtual App</span><span class="sello">Android</span><span class="mas">+</span></summary>
             <div class="detalle">
-              <p>App Android nativa con la que los mercaderistas marcan su jornada y reportan desde el punto de venta, con su propio backend.</p>
-              <ul class="como"><li>SQLite, ContentProvider y SyncAdapter para trabajar sin conexión.</li><li>Control de ubicación: fuera de rango no se puede marcar.</li><li>Cierre de sesión automático a medianoche y vistas ligeras para gama baja.</li></ul>
-              <ul class="chips"><li>Java</li><li>Android</li><li>Volley</li><li>PHP</li></ul>
+              <p>App Android nativa para que los estudiantes gestionen su vida académica conectándose a una plataforma Moodle.</p>
+              <ul class="como"><li>Inicio de sesión con Google vinculado al usuario de Moodle, para que cada tarea se entregue con la identidad real.</li><li>Cursos, contenidos, entrega de tareas con archivos, foros, calificaciones, agenda e insignias.</li><li>Arquitectura MVVM con Repository, Coroutines y LiveData.</li></ul>
+              <ul class="chips"><li>Kotlin</li><li>MVVM</li><li>Retrofit</li><li>Material Design</li></ul>
+              <a class="boton" href="https://github.com/Dacb2134/AulaVirtual-Android" target="_blank" rel="noopener">[ Código ↗ ]</a>
+            </div>
+          </details>
+        </li>
+        <li class="proyecto" data-tipo="web">
+          <details>
+            <summary><span class="num">04</span><span class="nombre">Sitio INSTALLMELSI</span><span class="sello sello-vivo">En vivo</span><span class="mas">+</span></summary>
+            <div class="detalle">
+              <p>Sitio web corporativo para una empresa de seguridad eléctrica, con secciones separadas para profesionales y propietarios.</p>
+              <ul class="como"><li>HTML y CSS a mano, sin frameworks.</li><li>Publicado con GitHub Pages.</li></ul>
+              <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+              <div class="acciones">
+                <a class="boton" href="https://dacb2134.github.io/INSTALLMELSI-S.A.S/" target="_blank" rel="noopener">[ Ver sitio ↗ ]</a>
+                <a class="boton" href="https://github.com/Dacb2134/INSTALLMELSI-S.A.S" target="_blank" rel="noopener">[ Código ↗ ]</a>
+              </div>
+            </div>
+          </details>
+        </li>
+        <li class="proyecto" data-tipo="web">
+          <details>
+            <summary><span class="num">05</span><span class="nombre">Calculadora CI/CD</span><span class="sello sello-vivo">En vivo</span><span class="mas">+</span></summary>
+            <div class="detalle">
+              <p>Prueba de concepto de integración y despliegue continuo para la materia Gestión de la Configuración del Software.</p>
+              <ul class="como"><li>Pipeline en GitHub Actions que valida ramas y pull requests con pruebas.</li><li>Despliegue automático a GitHub Pages cada vez que cambia la rama principal.</li></ul>
+              <ul class="chips"><li>JavaScript</li><li>Node.js</li><li>GitHub Actions</li></ul>
+              <div class="acciones">
+                <a class="boton" href="https://dacb2134.github.io/calculadora-calificaciones-cicd/" target="_blank" rel="noopener">[ Ver demo ↗ ]</a>
+                <a class="boton" href="https://github.com/Dacb2134/calculadora-calificaciones-cicd" target="_blank" rel="noopener">[ Código ↗ ]</a>
+              </div>
+            </div>
+          </details>
+        </li>
+        <li class="proyecto" data-tipo="java">
+          <details>
+            <summary><span class="num">06</span><span class="nombre">Gestión de Cárcel</span><span class="sello">Escritorio</span><span class="mas">+</span></summary>
+            <div class="detalle">
+              <p>Aplicación de escritorio para administrar reclusos, asistencias y actividades de un centro penitenciario.</p>
+              <ul class="como"><li>Arquitectura MVC en Java con base de datos MySQL.</li><li>Incluye documentación del sistema.</li></ul>
+              <ul class="chips"><li>Java</li><li>MySQL</li><li>MVC</li></ul>
+              <a class="boton" href="https://github.com/Dacb2134/GRUPOD" target="_blank" rel="noopener">[ Código ↗ ]</a>
+            </div>
+          </details>
+        </li>
+        <li class="proyecto" data-tipo="java">
+          <details>
+            <summary><span class="num">07</span><span class="nombre">Sin Exclusión Mutua</span><span class="sello">Concurrencia</span><span class="mas">+</span></summary>
+            <div class="detalle">
+              <p>Simulador de reserva de asientos de avión con 3 ventanillas concurrentes que demuestra condiciones de carrera en tiempo real.</p>
+              <ul class="como"><li>Hilos de Java compitiendo por el mismo recurso sin sincronización, para ver el error ocurrir.</li><li>Proyecto de Aplicaciones Distribuidas.</li></ul>
+              <ul class="chips"><li>Java</li><li>Threads</li><li>Maven</li></ul>
+              <a class="boton" href="https://github.com/Dacb2134/SinExclusionMutua" target="_blank" rel="noopener">[ Código ↗ ]</a>
             </div>
           </details>
         </li>
         <li class="proyecto" data-tipo="web movil">
           <details>
-            <summary><span class="num">05</span><span class="nombre">Ecosistema de Obras</span><span class="sello">Trabajo</span><span class="mas">+</span></summary>
+            <summary><span class="num">08</span><span class="nombre">ObraFlow CRM</span><span class="sello">En desarrollo</span><span class="mas">+</span></summary>
             <div class="detalle">
-              <p>Tres sistemas conectados para un fabricante de pinturas: app de técnicos en terreno, web de técnicos y web maestra de seguimiento de obras en 6 fases.</p>
-              <ul class="como"><li>Pipeline de captación, agenda, visita, auditoría, facturación y cobro por cuotas.</li><li>Tablas de prueba aisladas para probar sin tocar los datos reales.</li><li>Switch de canales en la web maestra sin cambiar el esquema de la base.</li></ul>
-              <ul class="chips"><li>PHP</li><li>MySQL</li><li>Java</li><li>Android</li></ul>
-            </div>
-          </details>
-        </li>
-        <li class="proyecto" data-tipo="web">
-          <details>
-            <summary><span class="num">06</span><span class="nombre">Centinela</span><span class="sello">Trabajo</span><span class="mas">+</span></summary>
-            <div class="detalle">
-              <p>Centro de observabilidad: captura los errores de los sistemas de campo en el momento en que ocurren y los muestra en un panel en vivo.</p>
-              <ul class="como"><li>Sonda en navegador y en servidor que se conecta a cualquier proyecto en 2 pasos.</li><li>Agrupa ocurrencias en problemas y las clasifica por severidad.</li><li>Guarda el contexto de negocio para reproducir el fallo sin preguntar al usuario.</li></ul>
-              <ul class="chips"><li>PHP</li><li>MySQL</li><li>JavaScript</li></ul>
-            </div>
-          </details>
-        </li>
-        <li class="proyecto" data-tipo="web">
-          <details>
-            <summary><span class="num">07</span><span class="nombre">Galería de Promociones</span><span class="sello">Trabajo</span><span class="mas">+</span></summary>
-            <div class="detalle">
-              <p>Galería de fotos de promociones en punto de venta con filtros en cascada y resumen por categoría, fabricante y tipo de promoción.</p>
-              <ul class="como"><li>Filtros dependientes que se recalculan según lo elegido.</li><li>Un resumen cuyo total cuadra exactamente con los resultados filtrados.</li></ul>
-              <ul class="chips"><li>PHP</li><li>MySQL</li><li>SQL</li></ul>
+              <p>CRM de ventas en terreno para obras de construcción: captación, agenda de visitas, proformas con foto de evidencia, facturación y cobro por cuotas.</p>
+              <ul class="como"><li>App Android offline-first con un módulo de sincronización por entidad.</li><li>API PHP con una capa que traduce los campos de la app a las columnas de la base.</li><li>Panel web para analistas y despliegue con dominio propio y SSL.</li></ul>
+              <ul class="chips"><li>PHP 8.4</li><li>MySQL</li><li>Java</li><li>SQLite</li></ul>
             </div>
           </details>
         </li>

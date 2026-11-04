@@ -36,17 +36,6 @@ function revelarAlBajar() {
   document.querySelectorAll('.revelar').forEach(el => observador.observe(el));
 }
 
-function filtrarProyectos() {
-  const botones = document.querySelectorAll('.filtro');
-  botones.forEach(boton => boton.addEventListener('click', () => {
-    botones.forEach(b => b.classList.toggle('activo', b === boton));
-    const filtro = boton.dataset.filtro;
-    document.querySelectorAll('.proyecto').forEach(p => {
-      p.hidden = filtro !== 'todos' && !p.dataset.tipo.split(' ').includes(filtro);
-    });
-  }));
-}
-
 function relojGuayaquil() {
   const reloj = document.getElementById('reloj');
   const formato = new Intl.DateTimeFormat('es-EC', { timeZone: 'America/Guayaquil', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
@@ -55,7 +44,6 @@ function relojGuayaquil() {
   setInterval(tic, 1000);
 }
 
-filtrarProyectos();
 relojGuayaquil();
 
 if (sinMovimiento) {

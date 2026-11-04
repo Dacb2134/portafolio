@@ -49,9 +49,9 @@
           <div><dt>Base</dt><dd>Guayaquil, EC</dd></div>
         </dl>
         <dl class="marcador">
-          <div><dt>Proyectos</dt><dd data-contar="8">0</dd></div>
+          <div><dt>Proyectos</dt><dd data-contar="4">0</dd></div>
           <div><dt>Hackathons</dt><dd data-contar="2">0</dd></div>
-          <div><dt>En vivo</dt><dd data-contar="3">0</dd></div>
+          <div><dt>Tecnologías</dt><dd data-contar="17">0</dd></div>
         </dl>
         <div class="barra-xp"><span>XP</span><i></i></div>
       </aside>
@@ -123,16 +123,10 @@
     <section class="seccion revelar" id="proyectos">
       <div class="seccion-cabecera">
         <h2 class="seccion-titulo">Proyectos</h2>
-        <div class="filtros" role="group" aria-label="Filtrar proyectos">
-          <button class="filtro activo" data-filtro="todos">Todos</button>
-          <button class="filtro" data-filtro="web">Web</button>
-          <button class="filtro" data-filtro="movil">Móvil</button>
-          <button class="filtro" data-filtro="ia">IA</button>
-          <button class="filtro" data-filtro="java">Java</button>
-        </div>
+        <a class="etiqueta" href="https://github.com/Dacb2134" target="_blank" rel="noopener">Ver GitHub ↗</a>
       </div>
       <ol class="lista-proyectos">
-        <li class="proyecto" data-tipo="web ia">
+        <li class="proyecto">
           <details>
             <summary><span class="num">01</span><span class="nombre">FraudIA Claims</span><span class="sello">Hackathon</span><span class="mas">+</span></summary>
             <div class="detalle">
@@ -143,9 +137,20 @@
             </div>
           </details>
         </li>
-        <li class="proyecto" data-tipo="web ia">
+        <li class="proyecto">
           <details>
-            <summary><span class="num">02</span><span class="nombre">PulseAI</span><span class="sello sello-vivo">En vivo</span><span class="mas">+</span></summary>
+            <summary><span class="num">02</span><span class="nombre">Aula Virtual App</span><span class="sello">Android</span><span class="mas">+</span></summary>
+            <div class="detalle">
+              <p>App Android nativa para que los estudiantes gestionen su vida académica conectándose a una plataforma Moodle.</p>
+              <ul class="como"><li>Inicio de sesión con Google vinculado al usuario de Moodle, para que cada tarea se entregue con la identidad real.</li><li>Cursos, contenidos, entrega de tareas con archivos, foros, calificaciones, agenda e insignias.</li><li>Arquitectura MVVM con Repository, Coroutines y LiveData.</li></ul>
+              <ul class="chips"><li>Kotlin</li><li>MVVM</li><li>Retrofit</li><li>Material Design</li></ul>
+              <a class="boton" href="https://github.com/Dacb2134/AulaVirtual-Android" target="_blank" rel="noopener">[ Código ↗ ]</a>
+            </div>
+          </details>
+        </li>
+        <li class="proyecto">
+          <details>
+            <summary><span class="num">03</span><span class="nombre">PulseAI</span><span class="sello sello-vivo">En vivo</span><span class="mas">+</span></summary>
             <div class="detalle">
               <p>Agente conversacional que le explica al paciente su cobertura médica antes de atenderse, hecho en equipo para el hackIAthon (reto 3).</p>
               <ul class="como"><li>El paciente describe su síntoma y recibe la especialidad, el copago exacto según su plan y el hospital más conveniente.</li><li>Backend en FastAPI con un modelo Gemini y las pólizas guardadas en Notion.</li><li>Frontend en JavaScript puro con patrón MVC, publicado en Vercel.</li></ul>
@@ -157,74 +162,14 @@
             </div>
           </details>
         </li>
-        <li class="proyecto" data-tipo="movil">
+        <li class="proyecto">
           <details>
-            <summary><span class="num">03</span><span class="nombre">Aula Virtual App</span><span class="sello">Android</span><span class="mas">+</span></summary>
-            <div class="detalle">
-              <p>App Android nativa para que los estudiantes gestionen su vida académica conectándose a una plataforma Moodle.</p>
-              <ul class="como"><li>Inicio de sesión con Google vinculado al usuario de Moodle, para que cada tarea se entregue con la identidad real.</li><li>Cursos, contenidos, entrega de tareas con archivos, foros, calificaciones, agenda e insignias.</li><li>Arquitectura MVVM con Repository, Coroutines y LiveData.</li></ul>
-              <ul class="chips"><li>Kotlin</li><li>MVVM</li><li>Retrofit</li><li>Material Design</li></ul>
-              <a class="boton" href="https://github.com/Dacb2134/AulaVirtual-Android" target="_blank" rel="noopener">[ Código ↗ ]</a>
-            </div>
-          </details>
-        </li>
-        <li class="proyecto" data-tipo="web">
-          <details>
-            <summary><span class="num">04</span><span class="nombre">Sitio INSTALLMELSI</span><span class="sello sello-vivo">En vivo</span><span class="mas">+</span></summary>
-            <div class="detalle">
-              <p>Sitio web corporativo para una empresa de seguridad eléctrica, con secciones separadas para profesionales y propietarios.</p>
-              <ul class="como"><li>HTML y CSS a mano, sin frameworks.</li><li>Publicado con GitHub Pages.</li></ul>
-              <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
-              <div class="acciones">
-                <a class="boton" href="https://dacb2134.github.io/INSTALLMELSI-S.A.S/" target="_blank" rel="noopener">[ Ver sitio ↗ ]</a>
-                <a class="boton" href="https://github.com/Dacb2134/INSTALLMELSI-S.A.S" target="_blank" rel="noopener">[ Código ↗ ]</a>
-              </div>
-            </div>
-          </details>
-        </li>
-        <li class="proyecto" data-tipo="web">
-          <details>
-            <summary><span class="num">05</span><span class="nombre">Calculadora CI/CD</span><span class="sello sello-vivo">En vivo</span><span class="mas">+</span></summary>
-            <div class="detalle">
-              <p>Prueba de concepto de integración y despliegue continuo para la materia Gestión de la Configuración del Software.</p>
-              <ul class="como"><li>Pipeline en GitHub Actions que valida ramas y pull requests con pruebas.</li><li>Despliegue automático a GitHub Pages cada vez que cambia la rama principal.</li></ul>
-              <ul class="chips"><li>JavaScript</li><li>Node.js</li><li>GitHub Actions</li></ul>
-              <div class="acciones">
-                <a class="boton" href="https://dacb2134.github.io/calculadora-calificaciones-cicd/" target="_blank" rel="noopener">[ Ver demo ↗ ]</a>
-                <a class="boton" href="https://github.com/Dacb2134/calculadora-calificaciones-cicd" target="_blank" rel="noopener">[ Código ↗ ]</a>
-              </div>
-            </div>
-          </details>
-        </li>
-        <li class="proyecto" data-tipo="java">
-          <details>
-            <summary><span class="num">06</span><span class="nombre">Gestión de Cárcel</span><span class="sello">Escritorio</span><span class="mas">+</span></summary>
+            <summary><span class="num">04</span><span class="nombre">Gestión de Cárcel</span><span class="sello">Escritorio</span><span class="mas">+</span></summary>
             <div class="detalle">
               <p>Aplicación de escritorio para administrar reclusos, asistencias y actividades de un centro penitenciario.</p>
               <ul class="como"><li>Arquitectura MVC en Java con base de datos MySQL.</li><li>Incluye documentación del sistema.</li></ul>
               <ul class="chips"><li>Java</li><li>MySQL</li><li>MVC</li></ul>
               <a class="boton" href="https://github.com/Dacb2134/GRUPOD" target="_blank" rel="noopener">[ Código ↗ ]</a>
-            </div>
-          </details>
-        </li>
-        <li class="proyecto" data-tipo="java">
-          <details>
-            <summary><span class="num">07</span><span class="nombre">Sin Exclusión Mutua</span><span class="sello">Concurrencia</span><span class="mas">+</span></summary>
-            <div class="detalle">
-              <p>Simulador de reserva de asientos de avión con 3 ventanillas concurrentes que demuestra condiciones de carrera en tiempo real.</p>
-              <ul class="como"><li>Hilos de Java compitiendo por el mismo recurso sin sincronización, para ver el error ocurrir.</li><li>Proyecto de Aplicaciones Distribuidas.</li></ul>
-              <ul class="chips"><li>Java</li><li>Threads</li><li>Maven</li></ul>
-              <a class="boton" href="https://github.com/Dacb2134/SinExclusionMutua" target="_blank" rel="noopener">[ Código ↗ ]</a>
-            </div>
-          </details>
-        </li>
-        <li class="proyecto" data-tipo="web movil">
-          <details>
-            <summary><span class="num">08</span><span class="nombre">ObraFlow CRM</span><span class="sello">En desarrollo</span><span class="mas">+</span></summary>
-            <div class="detalle">
-              <p>CRM de ventas en terreno para obras de construcción: captación, agenda de visitas, proformas con foto de evidencia, facturación y cobro por cuotas.</p>
-              <ul class="como"><li>App Android offline-first con un módulo de sincronización por entidad.</li><li>API PHP con una capa que traduce los campos de la app a las columnas de la base.</li><li>Panel web para analistas y despliegue con dominio propio y SSL.</li></ul>
-              <ul class="chips"><li>PHP 8.4</li><li>MySQL</li><li>Java</li><li>SQLite</li></ul>
             </div>
           </details>
         </li>

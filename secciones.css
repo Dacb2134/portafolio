@@ -92,13 +92,9 @@
 .cable i:nth-child(3) { animation-delay: 1.6s; }
 @keyframes paquete { to { left: 100%; } }
 
-.filtros { display: flex; flex-wrap: wrap; gap: 6px; }
-.filtro { background: none; border: 1px solid var(--linea); padding: 6px 10px; cursor: pointer; color: var(--tinta-tenue); }
-.filtro.activo { border-color: var(--acento); color: var(--acento); background: var(--acento-lavado); }
 
 .lista-proyectos { list-style: none; border: 1px solid var(--linea); border-right: 4px solid var(--acento); }
 .proyecto + .proyecto { border-top: 1px solid var(--linea); }
-.proyecto[hidden] { display: none; }
 .proyecto summary {
   display: flex;
   align-items: center;

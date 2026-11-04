@@ -58,7 +58,7 @@ button { font: inherit; color: inherit; }
 .marca { font: 700 18px var(--pixel); letter-spacing: 1px; }
 .marca span { color: var(--acento); }
 
-.estado, .nav a, .tema, .etiqueta, .ceja, .filtro {
+.estado, .nav a, .tema, .etiqueta, .ceja {
   font: 11px var(--pixel);
   letter-spacing: 1.8px;
   text-transform: uppercase;

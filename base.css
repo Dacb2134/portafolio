@@ -158,8 +158,13 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
   .revelar { opacity: 1; transform: none; }
 }
 
-@media (max-width: 860px) {
-  .nav, .estado { display: none; }
+@media (max-width: 1200px) {
+  .estado { display: none; }
+  .nav { gap: 16px; }
+}
+
+@media (max-width: 1000px) {
+  .nav { display: none; }
   .tema { margin-left: auto; }
 }
 
